@@ -1,0 +1,7 @@
+1:1 IDENTIFIER name
+1:6 ASSIGN =
+1:8 ERROR_UNTERMINATED_STRING "abc
+2:1 IDENTIFIER port
+2:6 ASSIGN =
+2:8 INTEGER 80
+# end: tokens=5 errors=1

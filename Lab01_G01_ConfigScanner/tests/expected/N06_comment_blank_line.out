@@ -1,0 +1,7 @@
+1:1 IDENTIFIER port
+1:6 ASSIGN =
+1:8 INTEGER 80
+3:1 IDENTIFIER name
+3:6 ASSIGN =
+3:8 STRING "app"
+# end: tokens=6 errors=0

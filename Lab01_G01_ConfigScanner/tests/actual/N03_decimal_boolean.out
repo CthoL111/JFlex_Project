@@ -1,0 +1,10 @@
+1:1 IDENTIFIER timeout
+1:9 ASSIGN =
+1:11 DECIMAL 2.5
+2:1 IDENTIFIER debug
+2:7 ASSIGN =
+2:9 BOOLEAN true
+3:1 IDENTIFIER verbose
+3:9 ASSIGN =
+3:11 BOOLEAN false
+# end: tokens=9 errors=0

@@ -1,0 +1,10 @@
+2:1 LBRACKET [
+2:2 IDENTIFIER server
+2:8 RBRACKET ]
+3:1 IDENTIFIER host
+3:6 ASSIGN =
+3:8 STRING "localhost"
+4:1 IDENTIFIER port
+4:6 ASSIGN =
+4:8 INTEGER 8080
+# end: tokens=9 errors=0

@@ -1,0 +1,4 @@
+1:1 IDENTIFIER title
+1:7 ASSIGN =
+1:9 STRING "Hello, World # not a comment"
+# end: tokens=3 errors=0
