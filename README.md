@@ -5,10 +5,10 @@ Compilation I4 GIC, 2026-2027 - Lecturer: OL Phearun
 ## Members
 | Name | Student ID | Main responsibility |
 |------|-----------|---------------------|
-| (fill in) | (fill in) | (e.g. JFlex rules) |
-| (fill in) | (fill in) | (e.g. Java driver) |
-| (fill in) | (fill in) | (e.g. tests) |
-| (fill in, if 4th) | | (e.g. report and slides) |
+| YAN CHANTHOL | e20231348 | (e.g. JFlex rules) |
+|  YAN CHANTHOL | e20231348 | (e.g. Java driver) |
+| LY Sengkim | e20231094 | (e.g. tests) |
+| LY Sengkim | e20231094 | (e.g. report and slides) |
 
 Group ID: (fill in)
 

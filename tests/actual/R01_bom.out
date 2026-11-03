@@ -1,0 +1,4 @@
+1:1 IDENTIFIER port
+1:6 ASSIGN =
+1:8 INTEGER 80
+# end: tokens=3 errors=0

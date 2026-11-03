@@ -48,9 +48,8 @@ If the input stops in q2 (`1.`), the DECIMAL rule fails, which is why we added t
 ## 7. Contribution record
 | Member | Contribution |
 |---|---|
-| (name) | |
-| (name) | |
-| (name) | |
+| YAN CHANTHOL | e20231348 |
+| LY Sengkim | e20231094 |
 
 ## 8. Limitations
 Listed in README (no negatives, no escapes, ASCII identifiers only, UTF-8 without BOM).
