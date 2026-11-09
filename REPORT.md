@@ -1,5 +1,12 @@
 # Lab01 Report - Configuration File Scanner
-Group: (ID) | Members: (names and IDs)
+Group: 10  
+    
+Members: 
+| Name | Student ID |
+|------|-----------|
+| YAN CHANTHOL | e20231348 | 
+| LY Sengkim | e20231094 | 
+
 
 ## 1. Scope
 The scanner reads a small `key = value` configuration format and lists tokens with type, lexeme, line and column (from 1).
@@ -30,10 +37,15 @@ Errors are reported with position and scanning continues. End of input returns n
 
 ## 4. Automaton for DECIMAL (DFA)
 ```
-        digit            digit
-      +-------+        +-------+
-      v       |        v       |
- --> (q0) --digit--> (q1) --"."--> (q2) --digit--> ((q3))
+            digit                                          digit
+      ┌───────────────┐                                     ┌──┐
+      ▼               │                                     ▼  │
+ ──► (q0) ──digit──► (q1) ──────"."──────► (q2) ──digit──► ((q3))
+      │                                     │               │
+      │ "."                            "."  │               │ "."
+      │                                     │               │
+      │                                     ▼               │
+      └──────────────────────────────────► (qd) ◄───────────┘
 ```
 Precisely: q0 -digit-> q1; q1 -digit-> q1; q1 -"."-> q2; q2 -digit-> q3; q3 -digit-> q3. Accepting state: q3.
 It matches the regex `[0-9]+ "." [0-9]+`: the loop on q1 is `[0-9]+`, the `.` edge is the dot, and q2->q3 with the loop on q3 is the second `[0-9]+`.

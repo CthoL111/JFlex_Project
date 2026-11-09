@@ -10,7 +10,7 @@ Compilation I4 GIC, 2026-2027 - Lecturer: OL Phearun
 | LY Sengkim | e20231094 | (e.g. tests) |
 | LY Sengkim | e20231094 | (e.g. report and slides) |
 
-Group ID: (fill in)
+Group:10
 
 ## Versions used
 - JDK: (write your version, e.g. 17 or 21; run `java -version`)
@@ -68,4 +68,4 @@ javac -encoding UTF-8 -d out generated/ConfigScanner.java src/*.java
 - Tests were written and expected outputs were checked with a separate model; record your own actual results in `tests/results.md`.
 
 ## Assistance and sources
-JFlex User's Manual (https://jflex.de/manual.html); lecture notes; AI assistance (Claude) was used for a starting draft of the files. List here what the group changed and understood.
+JFlex User's Manual (https://jflex.de/manual.html); lecture notes; 
