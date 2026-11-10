@@ -25,6 +25,7 @@ LETTER      = [a-zA-Z_]
 DIGIT       = [0-9]
 IDENT       = {LETTER} ({LETTER} | {DIGIT})*
 INTEGER     = {DIGIT}+
+REAL_PORT   = {DIGIT}+ ("." {DIGIT}+){3}
 DECIMAL     = {DIGIT}+ "." {DIGIT}+
 BAD_NUMBER  = {DIGIT}+ "."
 STRING      = "\"" [^\"\r\n]* "\""
@@ -39,6 +40,7 @@ WHITESPACE  = [ \t\r\n]+
  * So BOOLEAN must be written before IDENT.
  */
 "true" | "false"  { return token(TokenType.BOOLEAN); }
+{REAL_PORT}   { return token(TokenType.REAL_PORT); }
 {IDENT}           { return token(TokenType.IDENTIFIER); }
 {DECIMAL}         { return token(TokenType.DECIMAL); }
 {BAD_NUMBER}      { return token(TokenType.ERROR_MALFORMED_NUMBER); }

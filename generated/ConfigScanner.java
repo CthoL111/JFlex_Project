@@ -97,10 +97,10 @@ public class ConfigScanner {
   private static final String ZZ_ACTION_PACKED_0 =
     "\1\0\1\1\1\2\1\3\1\4\1\5\1\6\1\7"+
     "\1\10\1\11\2\7\1\12\1\13\2\7\1\14\2\7"+
-    "\1\15";
+    "\1\0\1\15\2\0\1\16";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[20];
+    int [] result = new int[24];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -127,10 +127,10 @@ public class ConfigScanner {
   private static final String ZZ_ROWMAP_PACKED_0 =
     "\0\0\0\23\0\46\0\71\0\114\0\137\0\23\0\162"+
     "\0\23\0\23\0\205\0\230\0\23\0\253\0\276\0\321"+
-    "\0\253\0\344\0\367\0\162";
+    "\0\344\0\367\0\u010a\0\u011d\0\162\0\u0130\0\u0143\0\u0143";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[20];
+    int [] result = new int[24];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -161,12 +161,13 @@ public class ConfigScanner {
     "\7\10\6\0\1\10\1\0\1\10\2\0\4\10\1\20"+
     "\3\10\6\0\1\21\22\0\1\10\1\0\1\10\2\0"+
     "\3\10\1\22\4\10\6\0\1\10\1\0\1\10\2\0"+
-    "\7\10\1\23\6\0\1\10\1\0\1\10\2\0\5\10"+
-    "\1\23\2\10\6\0\1\10\1\0\1\10\2\0\1\10"+
-    "\1\24\6\10";
+    "\7\10\1\23\5\0\1\24\1\21\22\0\1\10\1\0"+
+    "\1\10\2\0\5\10\1\23\2\10\6\0\1\10\1\0"+
+    "\1\10\2\0\1\10\1\25\6\10\6\0\1\26\21\0"+
+    "\1\27\1\26\22\0\1\30\14\0";
 
   private static int [] zzUnpacktrans() {
-    int [] result = new int[266];
+    int [] result = new int[342];
     int offset = 0;
     offset = zzUnpacktrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -210,10 +211,10 @@ public class ConfigScanner {
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
     "\1\0\1\11\4\1\1\11\1\1\2\11\2\1\1\11"+
-    "\7\1";
+    "\6\1\1\0\1\1\2\0\1\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[20];
+    int [] result = new int[24];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -713,67 +714,72 @@ public class ConfigScanner {
             { return token(TokenType.ERROR_UNEXPECTED_CHAR);
             }
           // fall through
-          case 14: break;
+          case 15: break;
           case 2:
             { /* skip whitespace */
             }
           // fall through
-          case 15: break;
+          case 16: break;
           case 3:
             { return token(TokenType.ERROR_UNTERMINATED_STRING);
             }
           // fall through
-          case 16: break;
+          case 17: break;
           case 4:
             { /* skip comment */
             }
           // fall through
-          case 17: break;
+          case 18: break;
           case 5:
             { return token(TokenType.INTEGER);
             }
           // fall through
-          case 18: break;
+          case 19: break;
           case 6:
             { return token(TokenType.ASSIGN);
             }
           // fall through
-          case 19: break;
+          case 20: break;
           case 7:
             { return token(TokenType.IDENTIFIER);
             }
           // fall through
-          case 20: break;
+          case 21: break;
           case 8:
             { return token(TokenType.LBRACKET);
             }
           // fall through
-          case 21: break;
+          case 22: break;
           case 9:
             { return token(TokenType.RBRACKET);
             }
           // fall through
-          case 22: break;
+          case 23: break;
           case 10:
             { return token(TokenType.STRING);
             }
           // fall through
-          case 23: break;
+          case 24: break;
           case 11:
             { return token(TokenType.ERROR_MALFORMED_NUMBER);
             }
           // fall through
-          case 24: break;
+          case 25: break;
           case 12:
             { return token(TokenType.DECIMAL);
             }
           // fall through
-          case 25: break;
+          case 26: break;
           case 13:
             { return token(TokenType.BOOLEAN);
             }
           // fall through
-          case 26: break;
+          case 27: break;
+          case 14:
+            { return token(TokenType.REAL_PORT);
+            }
+          // fall through
+          case 28: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }
